@@ -99,11 +99,36 @@ for (var i = 0; i < totalMonth; i++) {
 
 // Calculating the profit and loss from month to month then the average
 var totalChange = 0;
+
 for (var i = 1; i < totalMonth; i++) {
   var perMonth = finances[i][1] - finances[i - 1][1];
   totalChange += perMonth;
 }
 var averageChange = totalChange / (totalMonth - 1);
 
+// Calculating the greatest profit/losses and storing it in a variable to be called.
+var greatestIncrease = {
+  date: "",
+  amount: 0,
+};
+var greatestDecrease = {
+  date: "",
+  amount: 0,
+};
+
+for (var i = 1; i < finances.length; i++) {
+  var change = finances[i][1] - finances[i - 1][1];
+  if (change > greatestIncrease.amount) {
+    greatestIncrease.amount = change;
+    greatestIncrease.date = finances[i][0];
+  }
+  if (change < greatestDecrease.amount) {
+    greatestDecrease.amount = change;
+    greatestDecrease.date = finances[i][0];
+  }
+}
+
 console.log(totalChange);
 console.log(averageChange);
+console.log(greatestIncrease.amount, greatestIncrease.date);
+console.log(greatestDecrease.amount, greatestDecrease.date);
