@@ -106,7 +106,7 @@ for (var i = 1; i < totalMonth; i++) {
 }
 var averageChange = totalChange / (totalMonth - 1);
 
-// Calculating the greatest profit/losses and storing it in a variable to be called.
+// Calculating the greatest profit/losses and storing it in a variable object to be called.
 var greatestIncrease = {
   date: "",
   amount: 0,
