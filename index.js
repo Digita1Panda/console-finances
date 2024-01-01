@@ -96,3 +96,14 @@ for (var i = 0; i < totalMonth; i++) {
   var amount = finances[i][1];
   netTotal += amount;
 }
+
+// Calculating the profit and loss from month to month then the average
+var totalChange = 0;
+for (var i = 1; i < totalMonth; i++) {
+  var perMonth = finances[i][1] - finances[i - 1][1];
+  totalChange += perMonth;
+}
+var averageChange = totalChange / (totalMonth - 1);
+
+console.log(totalChange);
+console.log(averageChange);
