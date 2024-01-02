@@ -128,37 +128,6 @@ for (var i = 1; i < finances.length; i++) {
   }
 }
 
-// console.log(totalChange);
-// console.log(averageChange);
-// console.log(greatestIncrease.amount, greatestIncrease.date);
-// console.log(greatestDecrease.amount, greatestDecrease.date);
-
-// Console log for the format displayed in the readme file
-// console.log(
-//   "Financial Analysis \n-------------------" +
-//     "\nTotal Months: " +
-//     totalMonth +
-//     "\nTotal: $" +
-//     netTotal +
-//     "\nAverage Change:" +
-//     " " +
-//     averageChange.toFixed(2) +
-//     "\nGreatest Increase in Profits/Losses:" +
-//     " " +
-//     greatestIncrease.date +
-//     " " +
-//     "($" +
-//     greatestIncrease.amount +
-//     ")" +
-//     "\nGreatest Decrease in Profits/Losses:" +
-//     " " +
-//     greatestDecrease.date +
-//     " " +
-//     "($" +
-//     greatestDecrease.amount +
-//     ")"
-// );
-
 console.log(`Financial Analysis
 --------------------
 Total Months: ${totalMonth}
