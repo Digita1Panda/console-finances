@@ -116,7 +116,7 @@ var greatestDecrease = {
   amount: 0,
 };
 
-for (var i = 1; i < finances.length; i++) {
+for (var i = 1; i < totalMonth; i++) {
   var change = finances[i][1] - finances[i - 1][1];
   if (change > greatestIncrease.amount) {
     greatestIncrease.amount = change;
