@@ -55,4 +55,4 @@ N/A
 
 ---
 
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+Copyright © 2023 K.Law All Rights Reserved.
